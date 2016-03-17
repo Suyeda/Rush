@@ -24,9 +24,6 @@
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
                     SJS
                 </a>
@@ -43,6 +40,9 @@
                     </li>
                     <li>
                         <a class="page-scroll" href="#education">Education</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -88,7 +88,7 @@
       </article>
     </div>
 
-    <!-- Download Section -->
+    <!-- Education Section -->
     <section id="education" class="content-section text-center">
         <div class="education-section">
             <div class="container">
@@ -102,12 +102,12 @@
 
                     <p class="desc">Graduated from the University of California, Davis with a Bachelor of Arts degree in Communication and minor in Economics.</p>
 
-                    <i class="fa fa-4x fa fa-gamepad wow bounceIn white" style="visibility: visible; animation-name: bounceIn;"></i>
+                    <i class="fa fa-4x fa fa-gamepad" style="visibility: visible; animation-name: bounceIn;"></i>
                     <h3>2014</h3>
                     <hr class="light">
                     <p class="desc">Worked at LVL6, a social mobile gaming startup with 2 titles on the iOS App Store, Age of Chaos and Mercenary Inc. As a Quality Assurance Analyst, I created new functional tests for the mobile games. Analyzed overall gameplay, design, mechanics, reliability, stability, and performance before patches went live. Managed special events in existing game and received player feedback.</p>
 
-                    <i class="fa fa-4x fa fa-graduation-cap wow bounceIn white" style="visibility: visible; animation-name: bounceIn;"></i>
+                    <i class="fa fa-4x fa fa-graduation-cap" style="visibility: visible; animation-name: bounceIn;"></i>
                     <h3>2015</h3>
                     <hr class="light">
                     <p class="desc">Attended a full-time coding bootcamp where I learned three different stacks over the course of 3 months. PHP, MEAN, Ruby on Rails. There I built awesome projects that gave me hands on experience as a developer. See Below!</p>
@@ -117,9 +117,63 @@
                     <hr class="light">
                     <p class="desc">Thank you for visiting my personal website. I love developing and will always continue learning whether it is in my free time or working. Hopefully some of my projects will catch your eye. And hopefully we can work together someday and build something incredible.</p>
 
-                    <hr>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="container content-section text-center">
+        <div class="row">
+              <h2 class="category">Portfolio</h2>
+              <hr>
+
+              <div class="post1">
+                <div class="portfolio-box">
+                  <div class="box1">
+                    <%= link_to image_tag('rushread', :class => 'img-responsive'), "http://www.rushread.com" %>
+                  </div>
+                  <div class="box2">
+                    <h5>Rush Read</h5>
+                    <hr>
+                    <p>Rush Read, an interactive app that improves reading speed and comprehension. Includes personal profiles to track reading achievements/awards and graphs to measure progress.</p>
+                    <button class="stack-m">
+                      MEAN Stack
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="post2">
+                <div class="portfolio-box">
+                  <div class="box1">
+                    <h5>Wanna Bet</h5>
+                    <hr>
+                    <p>Wanna Bet, was created when ping pong gents wanted to hold wagers but had no place to keep track. Create teams, manage players, compete for points to be the top on the leaderboard.</p>
+                    <button class="stack-l">
+                      LAMP Stack
+                    </button>
+                  </div>
+                  <div class="box2">
+                    <%= link_to image_tag('wannabet', :class => 'img-responsive'), "http://www.wannabet-s3.com" %>
+                  </div>
+                </div>
+              </div>
+
+              <div class="post3">
+                <div class="portfolio-box">
+                  <div class="box1">
+                    <%= link_to image_tag('mitrihair', :class => 'img-responsive'), "http://www.mitrihair.com" %>
+                  </div>
+                  <div class="box2">
+                    <h5>Mitri Studio</h5>
+                    <hr>
+                    <p>Mitri Studio, a hair stylist website that provides clients with an exceptional, experienced, and passionate professional.</p>
+                    <button class="stack-r">
+                      Ruby on Rails
+                    </button>
+                  </div>
+                </div>
+              </div>
         </div>
     </section>
 
